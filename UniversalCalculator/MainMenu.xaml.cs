@@ -27,29 +27,52 @@ namespace Calculator
 			this.InitializeComponent();
 		}
 
+		// Run the Maths Calculator application.
 		private void mathsCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			if(this.Frame != null)
+			{
+				this.Frame.Navigate(typeof(MainPage));
+			}
 		}
 
+		// Run the Mortgage Calculator application.
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			/*
+		    if(this.Frame != null)
+			{
+				this.Frame.Navigate(typeof(MortgageCalculator));
+			}
+			*/
 		}
 
+		// Run the Currency Converter application.
 		private void currencyConverterButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			/*
+			if(this.Frame != null)
+			{
+				this.Frame.Navigate(typeof(CurrencyConverter));
+			}
+			*/
 		}
 
+		// Run the Trip Calculator application.
 		private void tripCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			/*
+			if(this.Frame != null)
+			{
+				this.Frame.Navigate(typeof(TripCalculator));
+			}
+			*/
 		}
 
-		private void exitButton1_Click(object sender, RoutedEventArgs e)
+		// Exit the Application 
+		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			System.Environment.Exit(0);
 		}
 	}
 }

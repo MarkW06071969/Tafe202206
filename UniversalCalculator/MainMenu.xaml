@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="mainMenuForm" Background="#FFD5D8DC" Margin="10,0,0,0">
-        <TextBlock x:Name="headingTextBlock" HorizontalAlignment="Left" Height="59" Margin="344,60,0,0" Text="Universal Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="579" FontWeight="Bold" FontFamily="Arial" FontSize="48" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBlock x:Name="headingTextBlock" HorizontalAlignment="Center" Height="59" Margin="0,60,0,0" Text="Universal Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="579" FontWeight="Bold" FontFamily="Arial" FontSize="48" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="-0.084"/>
             </TextBlock.RenderTransform>
@@ -18,7 +18,7 @@
         <Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" Height="90" Margin="0,251,0,0" VerticalAlignment="Top" Width="450" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Normal" FontSize="36" Click="mortgageCalculatorButton_Click"/>
         <Button x:Name="currencyConverterButton" Content="Currency Converter" HorizontalAlignment="Center" Height="90" Margin="0,360,0,0" VerticalAlignment="Top" Width="450" FontFamily="Arial" FontWeight="Normal" FontSize="36" Click="currencyConverterButton_Click"/>
         <Button x:Name="tripCalculatorButton" Content="Trip Calculator" HorizontalAlignment="Center" Height="90" Margin="0,474,0,0" VerticalAlignment="Top" Width="450" FontFamily="Arial" FontWeight="Normal" FontSize="36" Click="tripCalculatorButton_Click"/>
-        <Button x:Name="exitButton1" Content="Exit" HorizontalAlignment="Center" Height="90" Margin="0,587,0,0" VerticalAlignment="Top" Width="450" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontWeight="Normal" FontSize="36" FontFamily="Arial" Click="exitButton1_Click"/>
-        <Image x:Name="abacusImage" HorizontalAlignment="Left" Height="187" Margin="1045,42,0,0" VerticalAlignment="Top" Width="175" Source="/Images/abacus.PNG"/>
+        <Image x:Name="abacusImage" HorizontalAlignment="Right" Height="187" Margin="0,42,20,0" VerticalAlignment="Top" Width="175" Source="/Images/abacus.PNG"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Height="90" VerticalAlignment="Top" Width="450" Margin="0,592,0,0" FontFamily="Arial" FontSize="36" Click="exitButton_Click"/>
     </Grid>
 </Page>
