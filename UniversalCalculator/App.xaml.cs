@@ -30,7 +30,7 @@ namespace Calculator
 			if (e.PrelaunchActivated == false)
 			{
 				if (rootFrame.Content == null)
-					rootFrame.Navigate(typeof(MainMenu), e.Arguments);
+					rootFrame.Navigate(typeof(TripCalculator), e.Arguments);
 
 				Window.Current.Activate();
 			}
