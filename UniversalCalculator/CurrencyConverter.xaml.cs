@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Media.Imaging;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,7 +28,12 @@ namespace Calculator
 		public CurrencyConverter()
 		{
 			this.InitializeComponent();
+
+
 		}
+
+
+
 		// Currency Calculator CLick button routine
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{

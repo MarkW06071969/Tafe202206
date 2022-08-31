@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-	<Grid>
+	<Grid Background="#FFD5D8DC">
 		<TextBlock x:Name="Heading" HorizontalAlignment="Center" Height="100" Margin="0,20,0,0" VerticalAlignment="Top"  FontSize="48"  Text="Currency Conversion Calculator" FontWeight="Bold"/>
 		<Grid HorizontalAlignment="Center" Height="600" Margin="0,100,0,0" VerticalAlignment="Top" Width="1080">
 			<Grid.ColumnDefinitions>
@@ -30,25 +30,96 @@
 			<TextBlock x:Name="from" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="36" Grid.Row="0" Grid.Column="1" Text="From"/>
 			<TextBlock x:Name="to" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="36" Grid.Row="0" Grid.Column="2" Text="To"/>
 			<TextBox x:Name ="input" HorizontalAlignment = "Center" Height = "32" TextWrapping = "Wrap" VerticalAlignment = "Top" Width = "300" Grid.Row="1" Grid.Column="0" PlaceholderText="Enter amount to convert"/>
-			<ComboBox x:Name = "combofrom" HorizontalAlignment = "Center" VerticalAlignment = "Top" Width = "300" IsEditable = "True" Height = "32" SelectionChanged = "Combofrom_SelectionChanged" Grid.Row="1" Grid.Column="1" SelectedIndex="0">
-				<ComboBoxItem Content = "USD - US Dollar" />
-				<ComboBoxItem Content = "EUR - Euro" />
-				<ComboBoxItem Content = "GPB - British Pound" />
-				<ComboBoxItem Content = "INR - Indian Rupee" />
+			<ComboBox x:Name = "combofrom" HorizontalAlignment = "Center" VerticalAlignment = "Top" Width = "300" IsEditable = "False" Height = "32" SelectionChanged = "Combofrom_SelectionChanged" Grid.Row="1" Grid.Column="1" SelectedIndex="0">
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="USD - US Dollar" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/USA1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="EUR - Euro" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/EUR1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="GPB - British Pound" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/UK1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="INR - Indian Rupee" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/India1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
 			</ComboBox>
-			<ComboBox x:Name = "comboto" HorizontalAlignment = "Center" VerticalAlignment = "Top" Width = "300" IsEditable = "True" Height = "32" SelectionChanged = "Comboto_SelectionChanged" Grid.Row="1" Grid.Column="2" SelectedIndex="1">
-				<ComboBoxItem Content = "USD - US Dollar" />
-				<ComboBoxItem Content = "EUR - Euro" />
-				<ComboBoxItem Content = "GPB - British Pound" />
-				<ComboBoxItem Content = "INR - Indian Rupee" />
+			<ComboBox x:Name = "comboto" HorizontalAlignment = "Center" VerticalAlignment = "Top" Width = "300" IsEditable = "False" Height = "32" SelectionChanged = "Comboto_SelectionChanged" Grid.Row="1" Grid.Column="2" SelectedIndex="1">
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="USD - US Dollar" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/USA1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="EUR - Euro" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/EUR1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="GPB - British Pound" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/UK1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
+				<ComboBoxItem >
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="30"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Text="INR - Indian Rupee" VerticalAlignment="Center" Grid.Column="0"/>
+						<Image Height="25" Source="/Images/India1.PNG" Grid.Column="1"></Image>
+					</Grid>
+				</ComboBoxItem>
 			</ComboBox>
 			<TextBlock x:Name="outputFrom" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="22" Grid.Row="2" Grid.Column="0"/>
 			<TextBlock x:Name="outputTo" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="22" Grid.Row="3" Grid.Column="0" FontWeight="Bold"/>
 			<TextBlock x:Name="conversion1" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Grid.Row="4" Grid.Column="0"/>
 			<TextBlock x:Name="conversion2" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Grid.Row="5" Grid.Column="0"/>
-			<Button Content="Calculate Currency" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="300" Height="50" Click="Button_Click" Grid.Row="6" Grid.Column="1" FontSize="16"/>
+			<Button Content="Calculate Currency" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="300" Height="50" Click="Button_Click" Grid.Row="6" Grid.Column="1" FontSize="16" Background="#33000000"/>
 			<Button Content="Exit" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="300" Height="50" Click="Button_Click_1" Grid.Row="7" Grid.Column="1" FontSize="16"/>
 		</Grid>
-
 	</Grid>
 </Page>
