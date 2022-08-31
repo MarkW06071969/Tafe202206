@@ -50,12 +50,12 @@ namespace Calculator
 		// Run the Currency Converter application.
 		private void currencyConverterButton_Click(object sender, RoutedEventArgs e)
 		{
-			/*
+			
 			if(this.Frame != null)
 			{
 				this.Frame.Navigate(typeof(CurrencyConverter));
 			}
-			*/
+			
 		}
 
 		// Run the Trip Calculator application.
