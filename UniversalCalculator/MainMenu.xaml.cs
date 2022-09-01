@@ -61,12 +61,12 @@ namespace Calculator
 		// Run the Trip Calculator application.
 		private void tripCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			/*
+			
 			if(this.Frame != null)
 			{
 				this.Frame.Navigate(typeof(TripCalculator));
 			}
-			*/
+			
 		}
 
 		// Exit the Application 

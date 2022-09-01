@@ -23,9 +23,9 @@ namespace Calculator
 	/// </summary>
 	public sealed partial class TripCalculator : Page
 	{
-		/*private DateTime dateHired;
+		
 		private double strKm;
-		private double endKm;*/
+		private double endKm;
 		private int dayHired;
 		private decimal pricePerDay;
 		private decimal total;
@@ -44,13 +44,13 @@ namespace Calculator
 
 		private async void calcButton_Click(object sender, RoutedEventArgs e)
 		{
-		/*	try
+			try
 			{
 				strKm = double.Parse(strKmBox.Text);
 			}
 			catch (Exception)
 			{
-				var dialogMessage = new MessageDialog("Please Enter a Number");
+				var dialogMessage = new MessageDialog("Please Enter the Starting Kilometers");
 				await dialogMessage.ShowAsync();
 				strKmBox.Focus(FocusState.Programmatic);
 				strKmBox.SelectAll();
@@ -63,20 +63,20 @@ namespace Calculator
 			}
 			catch (Exception)
 			{
-				var dialogMessage = new MessageDialog("Please Enter a Number");
+				var dialogMessage = new MessageDialog("Please Enter the ending Kilometers");
 				await dialogMessage.ShowAsync();
 				endKmBox.Focus(FocusState.Programmatic);
 				endKmBox.SelectAll();
 				return;
 			}
-		*/
+		
 			try
 			{
 				dayHired = int.Parse(noDayHiredBox.Text);
 			}
 			catch (Exception)
 			{
-				var dialogMessage = new MessageDialog("Please Enter a Number");
+				var dialogMessage = new MessageDialog("Please Enter the number of days hired");
 				await dialogMessage.ShowAsync();
 				noDayHiredBox.Focus(FocusState.Programmatic);
 				noDayHiredBox.SelectAll();
@@ -88,7 +88,7 @@ namespace Calculator
 			}
 			catch (Exception)
 			{
-				var dialogMessage = new MessageDialog("Please Enter a Number");
+				var dialogMessage = new MessageDialog("Please Enter the daily price");
 				await dialogMessage.ShowAsync();
 				priceDayBox.Focus(FocusState.Programmatic);
 				priceDayBox.SelectAll();
