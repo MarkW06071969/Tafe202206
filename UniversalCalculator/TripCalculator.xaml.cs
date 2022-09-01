@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,9 +23,9 @@ namespace Calculator
 	/// </summary>
 	public sealed partial class TripCalculator : Page
 	{
-		private DateTime dateHired;
+		/*private DateTime dateHired;
 		private double strKm;
-		private double endKm;
+		private double endKm;*/
 		private int dayHired;
 		private decimal pricePerDay;
 		private decimal total;
@@ -43,15 +44,59 @@ namespace Calculator
 
 		private async void calcButton_Click(object sender, RoutedEventArgs e)
 		{
-			try
+		/*	try
 			{
 				strKm = double.Parse(strKmBox.Text);
 			}
 			catch (Exception)
 			{
-				
+				var dialogMessage = new MessageDialog("Please Enter a Number");
+				await dialogMessage.ShowAsync();
+				strKmBox.Focus(FocusState.Programmatic);
+				strKmBox.SelectAll();
+				return;
 			}
 
+			try
+			{
+				endKm = double.Parse(endKmBox.Text);
+			}
+			catch (Exception)
+			{
+				var dialogMessage = new MessageDialog("Please Enter a Number");
+				await dialogMessage.ShowAsync();
+				endKmBox.Focus(FocusState.Programmatic);
+				endKmBox.SelectAll();
+				return;
+			}
+		*/
+			try
+			{
+				dayHired = int.Parse(noDayHiredBox.Text);
+			}
+			catch (Exception)
+			{
+				var dialogMessage = new MessageDialog("Please Enter a Number");
+				await dialogMessage.ShowAsync();
+				noDayHiredBox.Focus(FocusState.Programmatic);
+				noDayHiredBox.SelectAll();
+				return;
+			}
+			try
+			{
+				pricePerDay = decimal.Parse(priceDayBox.Text);
+			}
+			catch (Exception)
+			{
+				var dialogMessage = new MessageDialog("Please Enter a Number");
+				await dialogMessage.ShowAsync();
+				priceDayBox.Focus(FocusState.Programmatic);
+				priceDayBox.SelectAll();
+				return;
+			}
+
+			total = pricePerDay * dayHired;
+			amountPayBox.Text = total.ToString();
 
 		}
 
@@ -59,5 +104,7 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(MainMenu));
 		}
+
+		
 	}
 }

@@ -19,7 +19,7 @@
 		</StackPanel>
 			<StackPanel x:Name="dateHirePanel" Orientation="Horizontal" HorizontalAlignment="Center">
 				<TextBlock x:Name="dateHireTxtBlock" Text="Date Hire:" FontSize="24" Width="160"></TextBlock>
-				<DatePicker x:Name="dateHirePicker" Margin="0,0,0,0"></DatePicker>
+				<DatePicker x:Name="dateHirePicker" Margin="0,0,0,0" ></DatePicker>
 				<Button x:Name="sysDateButton" Content="Today's Date" Margin="100,0,0,0" Click="sysDateButton_Click"></Button>
 			</StackPanel>
 			<StackPanel x:Name="strKmPanel" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
@@ -40,11 +40,11 @@
 			</StackPanel>
 			<StackPanel x:Name="amountPayPanel" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
 				<TextBlock x:Name="amountPayBlock" Text="Amount to pay" FontSize="24" Width="250"></TextBlock>
-				<TextBox x:Name="amountPayBox" Margin="0,0,260,0" Width="150" ></TextBox>
+				<TextBox x:Name="amountPayBox" Margin="0,0,260,0" Width="150" IsReadOnly="True" ></TextBox>
 			</StackPanel>
 			<StackPanel x:Name="calExitPanel" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
-				<Button x:Name="calcButton" Content="Calculator Total" Margin="0,0,130,0" Width="150" HorizontalAlignment="Left" Click="calcButton_Click"></Button>
-				<Button x:Name="exitButtom" Content="Exit" Margin="0,0,150,0" Width="150" Click="exitButtom_Click"></Button>
+				<Button x:Name="calcButton" Content="Calculator Total" Margin="0,0,130,0" Width="150" Background="#33000000" HorizontalAlignment="Left" Click="calcButton_Click"></Button>
+				<Button x:Name="exitButtom" Content="Exit" Margin="0,0,150,0" Width="150" Background="#33000000" Click="exitButtom_Click"></Button>
 			</StackPanel>
 		</StackPanel>
     </Grid>
