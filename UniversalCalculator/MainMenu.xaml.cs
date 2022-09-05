@@ -39,12 +39,10 @@ namespace Calculator
 		// Run the Mortgage Calculator application.
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			/*
-		    if(this.Frame != null)
+			if (this.Frame != null)
 			{
 				this.Frame.Navigate(typeof(MortgageCalculator));
 			}
-			*/
 		}
 
 		// Run the Currency Converter application.
