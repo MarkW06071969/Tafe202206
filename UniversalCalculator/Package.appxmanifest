@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="1dbb65dd-f27b-43bf-bce4-06bcd33bd845"
+    Name="1dbb65dd-f27b-43bf-bce4-06bcd33bd8451"
     Publisher="CN=User"
     Version="1.0.0.0" />
 
