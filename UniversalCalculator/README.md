@@ -1,5 +1,8 @@
 # calculator
-A calculator made in UWP with C# like the Windows Calculator Standard
+A maths calculator made in UWP with C# like the Windows Calculator Standard
+A mortgage calculator made in UWP with C# like the Windows Calculator Standard
+A currency converter made in UWP with C# like the Windows Calculator Standard
+A trip calculator made in UWP with C# like the Windows Calculator Standard
 
 ## how to run
 Intall Visual Studio with UWP, open the project and press F5
