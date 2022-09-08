@@ -22,3 +22,5 @@ A mortgage calculator (new) made in UWP with C# like the Windows Calculator Stan
 A currency converter (new) made in UWP with C# like the Windows Calculator Standard
 A trip calculator (new) made in UWP with C# like the Windows Calculator Standard
 
+Modified by Mark Stephen and Hamish.
+
